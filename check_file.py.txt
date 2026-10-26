@@ -1,0 +1,11 @@
+
+import os
+
+# File path to check
+file_path = "/tmp/postgres_backup.dump"
+
+# Check whether the backup file exists
+if os.path.exists(file_path):
+    print("Backup file exists:", file_path)
+else:
+    print("Backup file not found:", file_path)
